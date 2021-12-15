@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="apod.js"></script>
+    <link rel="stylesheet" href="apod.css">
+    <title>Nasa</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        <img src="./nasasemfundo.png" id="logo">
+
+            <h1>CLIQUE NO ASTRONAUTA FOTÓGRAFO!</h1>
+
+    
+            <img src="./astronautinha.png" id="botao" onclick="brotar()">
+
+
+        </nav>
+
+    </header>
+    <main>
+            <div class="container" id="oculto1">
+                <h1>APOD</h1>
+                <p>O Astronomy Picture of the Day (APOD, em português: <em><strong>Imagem Astronômica do Dia</strong></em>) é um website mantido pela NASA e pela Universidade Tecnológica de Michigan. De acordo com o website, "cada dia uma imagem ou foto diferente do universo é mostrada, com uma curta explicação escrita por um astrônomo profissional". A fotografia mostrada não foi necessariamente tomada no mesmo dia em que foi mostrada, e por vezes fotos já mostradas anteriormente são apresentadas novamente.</p>
+                <h3>Digite a data para explorar a Galáxia!</h3>
+                <input type="date" id="data">
+                <button id="buscar" onclick="buscarApi()">Buscar</button>
+            </div>
+        
+
+            <div class="container" id="oculto2">
+                <img id="img-api" alt="img">
+
+            </div>
+
+            <div class="container" id="oculto3">
+                <h1 id="titulo-api"></h1><br>
+                <p id="texto-api"></p>
+                
+            </div>
+
+
+    </main>
+
+       
+        
+        <footer>
+            <h4>Todos os direitos reservados! ©2021</h4>
+        </footer>
+
+</body>
+</html>
